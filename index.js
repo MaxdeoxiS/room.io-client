@@ -11,8 +11,7 @@ const { Client } = require('./lib/Client')
  * @param {ClientConfig} config config object for the client
  * @returns {Client} an instance of Server
  */
-export function createClient(config)
-{
+export function createClient(config) {
     /**
      * Create the Client instance
      * @type {Client}
@@ -20,8 +19,4 @@ export function createClient(config)
     const client = new Client(config)
 
     return client
-}
-
-module.exports = {
-    createClient
 }
